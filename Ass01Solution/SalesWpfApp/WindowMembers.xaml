@@ -1,0 +1,26 @@
+﻿<Window x:Class="SalesWpfApp.WindowMembers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalesWpfApp"
+        mc:Ignorable="d"
+        Title="Members Management" Height="450" Width="800">
+    <Grid>
+        <DataGrid
+            x:Name="dgMembers"
+            Width="600"
+            Height="300" Margin="39,96,161,38" IsReadOnly="True"/>
+        <Label x:Name="lbKeyword" Content="Search"
+               Height="30"
+               Width="150" Margin="39,23,611,381"/>
+        <TextBox HorizontalAlignment="Left" Margin="39,58,0,0" TextWrapping="Wrap"
+                 x:Name="txtKeyword" 
+                 VerticalAlignment="Top"
+                 Width="200"/>
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="680,182,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.3,0.359" Height="35" Width="62"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="680,246,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.3,0.359" Height="35" Width="62"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="680,312,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.3,0.359" Height="35" Width="62"/>
+        <GroupBox Header="Actions" Margin="655,150,33,52"/>
+    </Grid>
+</Window>
